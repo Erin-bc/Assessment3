@@ -1,0 +1,350 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: montserrat, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 2pt;
+  font-size: 17px;
+  overflow-x: hidden;
+  margin: 0;
+  min-height:100vh;
+}
+
+a {
+  cursor: pointer;
+}
+  
+/* TOP NAV */
+
+.topnav {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+  
+.topnav a {
+  float: right;
+  color: #427437;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+.topnav a:hover {
+  color: #DABC5A;
+}
+
+#logo{
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.rhslinks{
+  margin-top: 10px;
+}
+
+.topnav a.split{
+  float: left;
+}
+
+#logo img {
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+
+/* FOOTER */
+
+#tagline{
+  width: 100vw;
+  margin-top: 100px;
+}
+  
+/* HOME */
+
+.home-gallery{
+    float: left;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 5px;
+    width: 100vw;
+    margin-bottom: 200px;
+}
+
+#img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9{
+    width: 100%; 
+}
+
+.gallery_row1, .gallery_row2, .gallery_row3{
+    width: 33%;
+}
+
+/* ABOUT */
+
+#about{
+  margin-top: 200px;
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-content{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+
+.heading {
+  width: 100%;
+  margin-bottom: 80px;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 10;
+  animation: dash 10s linear;
+  animation-timing-function: ease-in-out;
+  
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 822;
+  }
+  to {
+    stroke-dashoffset: 10;
+  }
+}
+
+.caption{
+  width: 55%;
+  font-family: bely, serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  font-size: 12pt;
+}
+
+.about-caption{
+  margin-left: 40px;
+}
+
+.profile-image {
+  margin-left: 40px;
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+} 
+
+#profile {
+  width: 84%;
+  align-self: center;
+}
+
+.white-space {
+ height: 300px;
+}
+
+.tree{
+  width: 600px;
+}
+
+/* PROJECT 1 : TAN VIVO */
+
+#project1-tanvivo{
+  display: none;
+  height: 200vh;
+}
+
+.tanvivo-sec1 {
+  display: flex;  
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.tanvivo-sec2 {
+  display: flex;  
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+#tanvivo-assets {
+  width: 35%;
+}
+
+.tv-header2{
+  color: #998580;
+}
+
+.tv-paragraph{
+  font-family: bely, serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  font-size: 12pt;
+}
+
+.opener-text{
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+  width: 30%;
+  height: 30vh;
+}
+
+.image-slide {
+  margin-left: 20vw;
+  display: flex;
+  width: 60%;
+  display: flex;
+}
+
+
+.image-slide img{
+  width: 600px;
+  height: 600px;
+}
+
+#tanvivo1{
+  margin-right: 500px;
+}
+
+#tanvivo2, #tanvivo3, #tanvivo4, #tanvivo5{
+  margin-right: 30px;
+}
+
+
+/* CONTACT */
+
+#contact{
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 300px;
+}
+
+.contact-title{
+  justify-content: center;
+  margin-top: 150px;
+  width: 100vw;
+  margin-left: 0px;
+}
+
+#stay-in-touch {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 10;
+  animation: dash 10s linear;
+  animation-timing-function: ease-in-out;
+}
+
+#email, #insta-handle {
+  margin-top: 50px;;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #998580;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 822;
+  }
+  to {
+    stroke-dashoffset: 10;
+  }
+}
+/* PROJECT OPENER */
+
+.project-opener {
+  justify-content: center;
+}
+
+.project-header, .project-paragraph, .project-opener-image {
+  width: 40%;
+  margin-right: 30vw;
+  margin-left: 30vw;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.project-header{
+font-family: montserrat, sans-serif;
+font-weight: 600;
+font-style: normal;
+letter-spacing: 2pt;
+font-size: 24px;
+color: #998580;
+}
+
+
+/* PROJECT GALLERY + LIGHTBOX */
+
+#project4-venosa, #project2-tapper, #project3-calendar, #project5-cromey, #project6-tcm{
+  font-family: bely, serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  font-size: 12pt;
+  justify-content: center;
+  display: grid;
+  display: none;
+  place-items: center;
+  margin-top: 100px;
+}
+
+.grid {
+  align-items: center;
+  width: min(95vw, 1023px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  margin-left: 15vw;
+}
+
+.grid img {
+  width: 100%;
+  cursor: pointer;
+}
+
+#lightbox, #lightbox2, #lightbox3, #lightbox4, #lightbox5  {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox.active {
+  display: flex;
+}
+
+#lightbox2.active {
+  display: flex;
+}
+
+#lightbox3.active {
+  display: flex;
+}
+
+#lightbox4.active {
+  display: flex;
+}
+
+#lightbox5.active {
+  display: flex;
+}
+
+#lightbox-img, #lightbox-img2, #lightbox-img3, #lightbox-img4, #lightbox-img5 {
+  max-width: 40%;
+}
+
